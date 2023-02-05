@@ -24,18 +24,18 @@ This is a great head start for anyone looking to create NFT collection or a mark
    And that’s it, you will now be able to see and enjoy your NFT in your own metamask wallet!
    
 ## Skills You Will Learn
-  1.Writing Smart Contracts in Solidity
-  2.Using Open Zepellin
-  3.Working with ERC721 Smart Contracts
-  4.Hosting metadata on IPFS using Pinata
-  5.Compiling and Deploying Smart Contracts using hardhat
-  6.Connecting to the Alchemy Node Service
-  7.Setting a minting price on NFTs
-  8.Setting a minting limit per user
-  9.Creating a basic react marketplace for your NFTs
-  10.Connecting metamask to react frontend
-  11.Calling Solidity Smart Contract from react
-  12.Withdrawing Money from a Smart Contract
+  1.  Writing Smart Contracts in Solidity
+  2.  Using Open Zepellin
+  3.  Working with ERC721 Smart Contracts
+  4.  Hosting metadata on IPFS using Pinata
+  5.  Compiling and Deploying Smart Contracts using hardhat
+  6.  Connecting to the Alchemy Node Service
+  7.  Setting a minting price on NFTs
+  8.  Setting a minting limit per user
+  9.  Creating a basic react marketplace for your NFTs
+  10. Connecting metamask to react frontend
+  11. Calling Solidity Smart Contract from react
+  12. Withdrawing Money from a Smart Contract
 
 ## Install this command (npm install) if node packages not available
 Then go to collection_react directory to run the react app
