@@ -288,6 +288,10 @@ You can also check if the NFT has been airdropped to your account or not on goer
 1. Go to https://goerli.etherscan.io/ and check the contract address to see the latest              transactions.
 2. Go to https://testnets.opensea.io/ and search your contract address to see minted NFTs.
 
+![NFT_MarketPlace5](https://user-images.githubusercontent.com/119148713/217037187-00246a6b-15c1-4918-8139-bac60e45d15f.png)
+
+![NFT_MarketPlace6](https://user-images.githubusercontent.com/119148713/217037225-8652afec-a88e-412e-afc0-4b2689aabbf1.png)
+
 **To view your NFTs in your metamask account.**
 + Go to metamask’s mobile app.
 + Import your current metamask wallet using the recovery phrase.
