@@ -175,9 +175,82 @@ Now we will be able to securely use all of our private information in this proje
 ## Writing smart contract
 Go to your contracts directory and make a new file called Collection.sol.
 
-Populate this file with the following code -
+Populate this file with the following code - <ins> [Collection.sol](https://github.com/Ashokanandhu/NFT_Collection/blob/main/contracts/Collection.sol) </ins>
+### Writing the deployment script
+To deploy our contract.
 
-<ins> [Collection.sol](https://github.com/Ashokanandhu/NFT_Collection/blob/main/contracts/Collection.sol) </ins>
+We have gotten most of the things set up already we just have to take care of 2 little things for now.
+
++ Ethers.js - Ethers.js is a very popular library, that makes it easy for us to interact with     the ethereum network. We will be using this library to deploy our smart contract.
+```
+npm install --save-dev @nomiclabs/hardhat-ethers ethers@^5.0.0
+```
++ To interact with ethereum, we will also need to set up the network we are using to do so. We     built on the **goerli test network** which allows developers to test out there software         without spending real eth.
+
+Go to your hardhat.config.js file and copy the following settings into it -- [hardhat.config.js](https://github.com/Ashokanandhu/NFT_Collection/blob/main/hardhat.config.js)
+
+So a quick explanation of what is happening here.
+
+Remember that .env file you made to store all of your private information, along with the key to your alchemy account.
+
+In the hardhat config file, we are setting up a goerli network on hardhat using the Quicknode HTTP url and the private key for your Metamask.
+
+We will soon use this network to finally deploy our smart contract.
+
+We are also setting the default solidity compiler version to 0.8.17
+
+Like most other coding languages, solidity also needs to be compiled into a form that the machine can understand.
+
+To check if everything is working properly let’s quickly compile our contract using hardhat.
+```
+npx hardhat compile
+```
+You should be able to see a newly created artifacts folder inside your directory. Keep an eye out for this, because we’ll be using this pretty soon.
+
+### The deployment!
+Go to the scripts folder and create a new file called deploy.js
+
+Copy the following boiler plate code into your file -- [deploy.js](https://github.com/Ashokanandhu/NFT_Collection/blob/main/scripts/deploy.js)
+
+This is standard code that you would find in any ethers.js or hardhat documentation.
+
+You first create a contract factory called Collection.
+
+- `const Collection = await ethers.getContractFactory("Collection")`
+
+You can now use this contract factory to deploy as many contract as you want.
+
+But we only need to deploy one.
+
+- `await collection.deployed()``
+- `console.log("Contract deployed to address:", collection.address)`
+
+From this one deployed smart contract we can mint as many NFTs as our heart pleases.
+
++ The smart contract is ready. 
++ The hardhat config is ready. 
++ The deploy script is ready. 
+
+Type this command into your command line, to deploy your contract on the goerli network.
+```
+npx hardhat run scripts/deploy.js --network goerli
+```
+
+You are now interacting with an ethereum network, so transactions might take some time.
+
+On a successful transaction confirmation you should see something like this.
+
+- `Contract deployed to address: <your_contract_address>`
+
+You have just deployed your own smart contract to the ethereum test network!
+
+Store this contract address somewhere. We will need it later.
+
+Go to the [goerli etherscan](https://goerli.etherscan.io/) and paste in your contract address. View your transaction details here, click on your transaction hash to understand the elements that were involved in your transaction.
+
+#### let’s move on to building a quick react frontend for our marketplace and then calling our deployed smart contract to mint for us, some awesome NFTs.
+
+
 
 ## Install this command (npm install) if node packages not available
 Then go to collection_react directory to run the react app
