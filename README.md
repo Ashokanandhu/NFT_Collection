@@ -250,7 +250,4 @@ Go to the [goerli etherscan](https://goerli.etherscan.io/) and paste in your con
 
 #### let’s move on to building a quick react frontend for our marketplace and then calling our deployed smart contract to mint for us, some awesome NFTs.
 
-
-
-## Install this command (npm install) if node packages not available
-Then go to collection_react directory to run the react app
+### Go To Collections_react folder from there follow README.md file (Or follow README2.md )
