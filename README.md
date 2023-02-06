@@ -258,8 +258,19 @@ Run this command in the collections-react directory to start your react app.
 ```
 npm run start
 ```
-You should be able to see your NFT marketplace in your browser.
+## You should be able to see your NFT marketplace in your browser.
 
-<picture>
- <img src="main/NFT_MarketPlace_screenshot/NFT_Marketplace.png">
-</picture>
+ ![NFT_Marketplace](https://user-images.githubusercontent.com/119148713/217030943-e67404af-b774-48d7-bc53-b8d9fd81835f.png)
+ 
+ ![NFT_MarketPlace0](https://user-images.githubusercontent.com/119148713/217033720-904744f4-873a-4b87-bc75-ae000a66f64b.png)
+
+ 
+ ![NFT_Marketplace2](https://user-images.githubusercontent.com/119148713/217031426-56514b61-073c-4a58-b8cb-2d7717c1b9c0.png)
+
+![NFT_Marketplace3](https://user-images.githubusercontent.com/119148713/217031504-e88fd375-e79f-4f12-8a17-d1df5583d4c3.png)
+
+![NFT_Marketplace4](https://user-images.githubusercontent.com/119148713/217031548-86d0a7ab-fac5-4d1a-a8b0-4dc9993209a8.png)
+
+
+
+
