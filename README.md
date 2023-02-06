@@ -264,6 +264,14 @@ npm run start
  
  ![NFT_MarketPlace0](https://user-images.githubusercontent.com/119148713/217033720-904744f4-873a-4b87-bc75-ae000a66f64b.png)
 
+Try clicking random mint buttons and see what happens.
+
+Play around with it, it is yours now!
+
+Take care of 2 things though
+
++ That you have enough goerli eth in your metamask wallet to buy the NFTs
++ You can’t mint more than 2 NFT , because we have set a minting limit of one per address. So     you can try minting NFTs from other accounts if you want more than 2, or you can re-deploy       your smart contract with the new minting limit!
  
  ![NFT_Marketplace2](https://user-images.githubusercontent.com/119148713/217031426-56514b61-073c-4a58-b8cb-2d7717c1b9c0.png)
 
@@ -271,6 +279,23 @@ npm run start
 
 ![NFT_Marketplace4](https://user-images.githubusercontent.com/119148713/217031548-86d0a7ab-fac5-4d1a-a8b0-4dc9993209a8.png)
 
+## Viewing your NFTs in metamask & etherscan
 
+You can now go to the goerli etherscan of your smart contract and see the various details of how the mint took place.
 
+You can also check if the NFT has been airdropped to your account or not on goerli.etherscan.
+
+1. Go to https://goerli.etherscan.io/ and check the contract address to see the latest              transactions.
+2. Go to https://testnets.opensea.io/ and search your contract address to see minted NFTs.
+
+**To view your NFTs in your metamask account.**
++ Go to metamask’s mobile app.
++ Import your current metamask wallet using the recovery phrase.
++ And then click on import NFTs.
++ Enter your contract address and tokenID (you can find this on etherscan) of the NFT minted       here.
++ Refresh metamask a few times, and you now have your own NFT!
+
+## Summary
+
+Congratulations  we have completed the projects,How make an NFT marketplace with a mint price.
 
