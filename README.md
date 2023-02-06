@@ -37,5 +37,41 @@ This is a great head start for anyone looking to create NFT collection or a mark
   11. Calling Solidity Smart Contract from react
   12. Withdrawing Money from a Smart Contract
 
+## Pre Requisites
++ Install Node and npm in your machine.
++ Have VScode installed in your machine. And, install Solidity plugin!
++ Setup your metamask account.
+
+### Setting Up The Environment
+So first things first, let’s create a directory for our project.
+Go to your command line and enter these commands
+(WSL is recommended for easier installation in Windows)
+
+```
+mkdir nft-collection  
+cd nft-collection
+```
+Time to set up npm in our project. We will use the node package manager to easily download and manage our dependencies.
+```
+npm init 
+```
+Just use the default values for all the installation questions and press enter.
+
+Once you have completed installation, you should see a package.json file in your nft-collection directory.
+
+### Installing Dependencies
+We would now need a framework to help us to write, compile, test and deploy our smart contract 
+
+#### Hardhat
+Blockchain is like a public database and our smart contracts live on that database. This database is publicly available and accessible. Based on our contract’s configuration, anyone or only specific people can play around with our contract. Every time we publish a contract on blockchain, it gets an address - a digital footprint for us to track it. We’ll build everything in the Ethereum Blockchain and also use Solidity and other libraries for this project.
+   
+   Publishing a contract directly on blockchain for learning purposes will be an expensive deal. Every time we create a new contract, edit the contract or publish it on the blockchain, we incur some cost in the form of ETH, or MATIC. In order to avoid that and test the contracts properly, we will create a test environment which pretty much replicates the production environment, is free to use, and easy to access.
+   
+   For this purpose, we will use HardHat. Hardhat gives you a local Ethereum network designed for rapid development. It allows you to deploy your contracts, run your tests and debug your code without spending a dime.
+   
+   ```
+   npm install --save-dev hardhat
+   ```
+You can check out the [hardhat documentation]([url](https://hardhat.org/hardhat-runner/docs/getting-started#overview)) for any help with installation.
 ## Install this command (npm install) if node packages not available
 Then go to collection_react directory to run the react app
