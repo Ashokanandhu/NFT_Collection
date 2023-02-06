@@ -255,6 +255,6 @@ You can also check if the NFT has been airdropped to your account or not on goer
 
 ## Summary
 
-Congratulations  we have completed the projects,How make an NFT marketplace with a mint price.
+Congratulations  we have completed the project, How make an NFT marketplace with a mint price.
 
 
