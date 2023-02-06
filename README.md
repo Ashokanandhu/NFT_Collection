@@ -251,3 +251,9 @@ Go to the [goerli etherscan](https://goerli.etherscan.io/) and paste in your con
 #### let’s move on to building a quick react frontend for our marketplace and then calling our deployed smart contract to mint for us, some awesome NFTs.
 
 ### Go To Collections_react folder from there follow README.md file (Or follow README2.md )
+
+# Launching your epic NFT marketplace
+
+Run this command in the collections-react directory to start your react app.
+
+
