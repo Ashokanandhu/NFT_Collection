@@ -255,5 +255,9 @@ Go to the [goerli etherscan](https://goerli.etherscan.io/) and paste in your con
 # Launching your epic NFT marketplace
 
 Run this command in the collections-react directory to start your react app.
+```
+npm run start
+```
+You should be able to see your NFT marketplace in your browser.
 
-
+![NFT_MarketPlace](https://github.com/Ashokanandhu/NFT_Collection/blob/main/NFT_MarketPlace_screenshot/NFT_Marketplace.png)
