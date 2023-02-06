@@ -260,4 +260,6 @@ npm run start
 ```
 You should be able to see your NFT marketplace in your browser.
 
-![NFT_MarketPlace](https://github.com/Ashokanandhu/NFT_Collection/blob/main/NFT_MarketPlace_screenshot/NFT_Marketplace.png)
+<picture>
+ <img src="main/NFT_MarketPlace_screenshot/NFT_Marketplace.png">
+</picture>
