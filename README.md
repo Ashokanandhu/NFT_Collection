@@ -72,6 +72,109 @@ Blockchain is like a public database and our smart contracts live on that databa
    ```
    npm install --save-dev hardhat
    ```
-You can check out the [hardhat documentation]([url](https://hardhat.org/hardhat-runner/docs/getting-started#overview)) for any help with installation.
+You can check out the <ins>[hardhat documentation](https://hardhat.org/hardhat-runner/docs/getting-started#overview)</ins> for any help with installation.
+
+now let’s set up hardhat by running this command inside our project folder.
+```
+npx hardhat
+```
+create an empty hardhat config file during installation.
+
+Once you have installed hardhat, quickly create 2 new directories - contracts and scripts in your root directory using these commands. The contracts directory will have all your smart contracts and the scripts directory will have all the scripts related to deployment of the contract.
+```
+mkdir contracts
+mkdir scripts
+```
+### Installing OpenZeppelin
+Openzeppelin is a library used for secure and efficient smart contract development.
+
+It is very time consuming to code the ERC721 contract from scratch. So we use already completed and security audited smart contracts from openzeppelin
+
+download openzeppelin using this command
+```
+npm install @openzeppelin/contracts
+```
+This is how your project folder will look like now.
+```
+NFT-collection
+-> cache
+-> contracts
+-> node_modules
+-> scripts
+- hardhat.config.js
+- package-lock.json
+- package.json
+```
+### Creating  MetaMask wallet
+Metamask wallet is your key to the web3 world. You can interact with the blockchain via a Metamask account. It is your digital wallet to store, swap and buy cryptocurrencies, tokens, NFTs, and other amazing things in the web3 world.
+
+Go to <ins>[MetaMask.io](https://metamask.io/)</ins>
+
+### Creating Quick Node endpoint
+Set up [QuickNode](https://www.quicknode.com/?utm_source=partner&utm_campaign=metaschool&utm_content=metaschool-guides&utm_medium=partner) with Ethereum testnet nodes
+
+QuickNode is a platform which helps you access the blockchain environment without going through the hassle of hosting your own node, saving time and resources. This platform lets you access blockchain nodes in a few clicks and you can scale the node performance according to your need thus creating an environment for you to scale your DApp.
+
++ Sign in / Sign up to your QuickNode account
++ Click on create an QuickNode endpoint 
++ Now select Ethereum as Network and Goerli as chain and continue
++ We don’t need any add-on so click **create endpoint **now
+
+Once you create the endpoint you can start setting up our Metamask Wallet with QuickNode.
+
++ Go to your Metamask wallet and click on the list of networks.
++ A drop-down list will show up with a list of networks but you need to click on **ADD NETWORK** at   the bottom of the list
++ Now you will have a form to fill up to add a new network to your metamask account
++ Let’s go back to QuickNode Endpoint Dashboard, and copy the HTTPS
+
+Now let’s go back to the Metamask add network form and 
++ Paste the HTTPS in New RPC Url field with 5 as Chain ID, 
++ “ETH” as Currency Symbol, 
++ Ethereum Goerli as Network Name (Any name as you like) and 
++ Finally https://goerli.etherscan.io/ as Block Explorer URL. 
++ Click Save
+
+### Get some fake ETH $$
+ Try to get some fake ETHs. This fake money will be used for deploying your contract and doing transactions on your contract. This is not real money, you can’t buy NFTs, or other assets via these ETH.
+ 
+ Drop your public address on the following links and the ETH will be transferred.
+ 
++ https://goerlifaucet.com/
+
+### Storing information the right way
+ we will create the **.env** file and for that we need the HTTP address from quicknode dashboard which you can copy from the dashboard itself and the private key from Metamask
+   ####Get your private  (MetaMask key)
+   Open the Metamask extension to find your private key. While writing and deploying your contract you sign off each contract with your private key to tell the blockchain that you are a legit person creating a real transaction. Now if that private key is made visible, the hacker can gain access to your account and then the rest will be history.
+   
+Keep your account and private key safe in the next steps
+
+ 🚨 DON’T COMMIT YOUR PRIVATE KEY ON GITHUB, DON’T SHARE IT ON DISCORD, DON’T SHARE IT ANYWHERE!
+ 
+ IF YOUR KEY IS PUBLIC, HACKERS AND STEALERS WILL TAKE ALL YOUR FUND AND EVERYTHING THAT IS ASSOCIATED WITH THAT ACCOUNT.
+ 
+ While writing and deploying your contract you sign off each contract with your private key to tell the blockchain that you are a legit person creating a real transaction. Now if that private key is made visible, the hacker can gain access to your account and then the rest will be history. In order to avoid this issue. Let’s do the following.
+ ```
+ npm install dotenv --save
+npx touch .gitignore
+touch .gitignore
+```
+Go ahead and create .env file at the root of your project.
+
+Open your .gitignore file and write **.env** there.
+
+
+All the secrets and important keys related to your project will be stored in .env file and we can access this data whenever and wherever. In the gitignore file we simply write .env, it tells git to ignore that file from future commits.
+
+Open the .env file you have just created. Add your MetaMask Private Key and QuickNode App HTTP URL there. Should be something like this.
+```
+API_URL_KEY = YOUR_QUICKNODE_APP_URL
+PRIVATE_KEY = YOUR_PRIVATE_KEY
+```
+Now we will be able to securely use all of our private information in this project.
+
+## Writing smart contract
+Go to your contracts directory and make a new file called Collection.sol.
+
+
 ## Install this command (npm install) if node packages not available
 Then go to collection_react directory to run the react app
