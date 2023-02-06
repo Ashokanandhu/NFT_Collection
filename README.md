@@ -273,11 +273,11 @@ Take care of 2 things though
 + That you have enough goerli eth in your metamask wallet to buy the NFTs
 + You can’t mint more than 2 NFT , because we have set a minting limit of one per address. So     you can try minting NFTs from other accounts if you want more than 2, or you can re-deploy       your smart contract with the new minting limit!
  
+ ![NFT_Marketplace4](https://user-images.githubusercontent.com/119148713/217031548-86d0a7ab-fac5-4d1a-a8b0-4dc9993209a8.png)
+ 
  ![NFT_Marketplace2](https://user-images.githubusercontent.com/119148713/217031426-56514b61-073c-4a58-b8cb-2d7717c1b9c0.png)
 
 ![NFT_Marketplace3](https://user-images.githubusercontent.com/119148713/217031504-e88fd375-e79f-4f12-8a17-d1df5583d4c3.png)
-
-![NFT_Marketplace4](https://user-images.githubusercontent.com/119148713/217031548-86d0a7ab-fac5-4d1a-a8b0-4dc9993209a8.png)
 
 ## Viewing your NFTs in metamask & etherscan
 
