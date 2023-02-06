@@ -175,6 +175,9 @@ Now we will be able to securely use all of our private information in this proje
 ## Writing smart contract
 Go to your contracts directory and make a new file called Collection.sol.
 
+Populate this file with the following code -
+
+<ins> [Collection.sol](https://github.com/Ashokanandhu/NFT_Collection/blob/main/contracts/Collection.sol) </ins>
 
 ## Install this command (npm install) if node packages not available
 Then go to collection_react directory to run the react app
